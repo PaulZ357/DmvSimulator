@@ -3,14 +3,15 @@ import java.util.Random;
 public class DmvSimulator {
     public static void main(String[] args) {
         Random rand = new Random();
-        int random = rand.nextInt(100)+1;
+        final int MAX_NUMBER = 200;
+        int random = rand.nextInt(MAX_NUMBER)+1;
         System.out.print("Welcome to the DMV. Your number is ");
         System.out.println(random+".");
         System.out.println("Please wait until your number is called");
         
         int count = random + 1;
         while (count != random) {
-            count = ((count - 1) % 100) + 1;
+            count = ((count - 1) % MAX_NUMBER) + 1;
             System.out.println(count);
             count++;
         }
