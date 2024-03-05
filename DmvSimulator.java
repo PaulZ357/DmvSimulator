@@ -15,6 +15,6 @@ public class DmvSimulator {
             count++;
         }
         System.out.println(count);
-        System.out.println("You don't have the required paperwork.");
+        System.out.println("You don't have the required paperwork... SO YOU WILL DIE!!! GET OUT NOW OR I WILL GET YOU!!!!");
     }
 }
