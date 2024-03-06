@@ -16,6 +16,11 @@ public class DmvSimulator {
             count++;
         }
         System.out.println(count);
-        System.out.println("You don't have the required paperwork... SO YOU WILL DIE!!! GET OUT NOW OR I WILL GET YOU!!!!");
+        random = rand.nextInt(100)+1;
+        if (random==1) {
+            System.out.println("You have the required paperwork and are all set");
+        } else {
+            System.out.println("You don't have the required paperwork... SO YOU WILL DIE!!! GET OUT NOW OR I WILL GET YOU!!!!");
+        }
     }
 }
